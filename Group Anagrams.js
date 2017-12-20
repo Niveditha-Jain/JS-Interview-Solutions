@@ -14,7 +14,6 @@ Return:
 var groupAnagrams = function(strs) {
     var map = {};
     var strArr = strs;
-   // var strArr = strs.split('');
     strs.forEach(function(str){
        var sorted = str.split('').sort().join('');
         if(map.hasOwnProperty(sorted)){
