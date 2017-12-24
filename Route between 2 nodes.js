@@ -25,6 +25,7 @@ function pathExists(graph, start, end){
            tracePath(hasPath, start, end);
         current.forEach(function(neighbour){
            if(neighbour.visited === false){
+              neighbour.visited = true;
               hasPath[neighbour] = current;
               queue.enqueue(neighbour);
            }
